@@ -45,14 +45,16 @@
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
     {{ end }}
+    <link rel="icon" href="/favicon.ico">
     {{ partial "head_highlightjs" . }}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />    
     {{ partial "head_custom.html" . }}
   </head>
 
   {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
-  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
+  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}{{ if .Params.hide_scroll_bar }} hide_scroll_bar{{ end }}">
     <header class="masthead">
       {{ partial "tagline.html" . }}
       {{ partial "menu.html" . }}
