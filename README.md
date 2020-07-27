@@ -2,7 +2,7 @@ This Hugo theme was ported from [Ivy](https://github.com/dmulholland/ivy), a min
 
 ## New features added by Alvin
 
-This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo-ivy](https://github.com/yihui/hugo-ivy). Alvin has added some new features as below:
+This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo-ivy](https://github.com/yihui/hugo-ivy). [Alvin](https://idealvin.github.io/) has added some new features as below:
 
 - Support Latex with [Mathjax](https://docs.mathjax.org/en/latest/configuration.html). See more details [here](https://idealvin.github.io/coding/2018/08/hugo/).
 
