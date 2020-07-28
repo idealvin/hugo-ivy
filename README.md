@@ -16,7 +16,7 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 - **[cnzz](https://www.cnzz.com/)**  
   - You **must** modify `layouts/partials/cnzz.html` with your own cnzz info.
   - You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L46) to disable it: `cnzz = false`.
-  - The cnzz status line was hidden by default. You may replace the `.cnzz: font-size` with a non-zero value in your [style.css](https://github.com/idealvin/hugo-ivy/blob/master/static/css/style.css#L368) to display it.
+  - The cnzz status line was hidden by default. You may replace the `.cnzz: font-size` with a non-zero value in your [style.css](https://github.com/idealvin/hugo-ivy/blob/master/static/css/style.css#L364) to display it.
 
 - **sidebar**  
   Sidebar is automatically generated if you put `toc: true` at the front matter of your markdown files.
