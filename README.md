@@ -8,8 +8,9 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 - **[LaTex](https://www.latex-project.org/)**  
   - `LaTex` is supported with [Mathjax](https://docs.mathjax.org/en/latest/configuration.html). It has a conflict with markdown on the underscore `_`. See how it was solved [here](https://idealvin.github.io/coding/2018/08/hugo/).
   - `Mathjax` is disabled by default. Add `mathjax: true` at the front matter of your markdown file to enable it.
-
-  [Here](https://idealvin.github.io/coding/2018/08/prime-number/) is an example.
+  - Example
+    - [html](https://idealvin.github.io/coding/2018/08/prime-number/)
+    - [markdown](https://github.com/idealvin/blog/blob/master/content/coding/2018/08/prime-number.md)
 
 - **[gitalk](https://github.com/gitalk/gitalk)**  
   - You **must** modify `layouts/partials/comments.html` with your own gitalk info. 
@@ -23,20 +24,13 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 
 - **sidebar**  
   Sidebar is automatically generated if you put `toc: true` at the front matter of your markdown files.
-  ```yaml
-  ---
-  toc: true
-  ---
-  ```
-  [Here](https://idealvin.github.io/coding/2020/07/co_en/) is an example.
+
+  - Example
+    - [html](https://idealvin.github.io/coding/2020/07/co_en/)
+    - [markdown](https://github.com/idealvin/blog/blob/master/content/coding/2020/07/co_en.md)
 
 - **Hide the scroll bar**  
   You may hide the scroll bar by adding `hide_scroll_bar: true` or `hidsb: true` at the front matter of your markdown files.
-  ```yaml
-  ---
-  hide_scroll_bar: true
-  ---
-  ```
 
 
 ## Example site
