@@ -6,7 +6,10 @@ This Hugo theme was ported from [Ivy](https://github.com/dmulholland/ivy), a min
 This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo-ivy](https://github.com/yihui/hugo-ivy). [Alvin](https://idealvin.github.io/) has added some new features:
 
 - **[LaTex](https://www.latex-project.org/)**  
-  `LaTex` is supported with [Mathjax](https://docs.mathjax.org/en/latest/configuration.html). It has a conflict with markdown on the underscore `_`. See how it was solved [here](https://idealvin.github.io/coding/2018/08/hugo/).
+  - `LaTex` is supported with [Mathjax](https://docs.mathjax.org/en/latest/configuration.html). It has a conflict with markdown on the underscore `_`. See how it was solved [here](https://idealvin.github.io/coding/2018/08/hugo/).
+  - `Mathjax` is disabled by default. Add `mathjax: true` at the front matter of your markdown file to enable it.
+
+  [Here](https://idealvin.github.io/coding/2018/08/prime-number/) is an example.
 
 - **[gitalk](https://github.com/gitalk/gitalk)**  
   - You **must** modify `layouts/partials/comments.html` with your own gitalk info. 
@@ -25,7 +28,7 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
   toc: true
   ---
   ```
-  [Here](https://idealvin.github.io/coding/2020/07/co_en/) is a example.
+  [Here](https://idealvin.github.io/coding/2020/07/co_en/) is an example.
 
 - **Hide the scroll bar**  
   You may hide the scroll bar by adding `hide_scroll_bar: true` or `hidsb: true` at the front matter of your markdown files.
