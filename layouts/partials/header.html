@@ -11,8 +11,12 @@
     <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     {{ end }}
-    <meta name="twitter:card" content="summary">
 
+    {{ if .Keywords }}
+    <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
+    {{ end }}
+
+    <meta name="twitter:card" content="summary">
     {{ with .Description }}
       {{ $.Scratch.Set "summary" (markdownify .) }}
     {{ else }}
@@ -23,7 +27,6 @@
     <meta property="description" content="{{ .Site.Params.description }}">
     {{ else }}
       {{ with ($.Scratch.Get "summary") }}
-      <meta property="description" content="{{ . }}">
       <meta property="og:description" content="{{ . }}">
       {{ end }}
     {{ end }}
@@ -38,10 +41,6 @@
     {{ end }}
     {{ end }}
 
-    {{ if .Keywords }}
-    <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
-    {{ end }}
-
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
     {{ end }}
@@ -54,7 +53,7 @@
   </head>
 
   {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
-  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}{{ if .Params.hide_scroll_bar }} hide_scroll_bar{{ end }}">
+  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}{{ if or .Params.hide_scroll_bar .Params.hidsb }} hide_scroll_bar{{ end }}">
     <header class="masthead">
       {{ partial "tagline.html" . }}
       {{ partial "menu.html" . }}
