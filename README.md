@@ -24,15 +24,15 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 
   You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L52) to disable all comments: `comments = false`.
 
-  You may add `no_comment: true` or `nocom: true` at the front matter of your markdown file to disable comment of a single page.
+  You may add `no_comment: true` or `nocom: true` at the front matter of your markdown file to disable comment for a single page.
 
 - **[cnzz](https://www.cnzz.com/)**
 
   You **must** modify `layouts/partials/cnzz.html` with your own cnzz info.
 
-  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L46) to disable it: `cnzz = false`.
+  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L52) to disable it: `cnzz = false`.
 
-  The cnzz status line was hidden by default. You may replace the `.cnzz: font-size` with a non-zero value in your [style.css](https://github.com/idealvin/hugo-ivy/blob/master/static/css/style.css#L379) to display it.
+  The cnzz status line was hidden by default. You may replace the `.cnzz: font-size` with a non-zero value in your [style.css](https://github.com/idealvin/hugo-ivy/blob/master/static/css/style.css) to display it.
 
 - **sidebar**
 
@@ -45,6 +45,9 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 
   You may hide the scroll bar by adding `hide_scroll_bar: true` or `hidsb: true` at the front matter of your markdown files.
 
+- **Hiden next button**
+
+  Place the mouse on the gold dividing point on the right edge of the article, and an little button `>>` will appear, click on it to jump to the next article.
 
 ## Example site
 
