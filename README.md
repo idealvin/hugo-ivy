@@ -22,7 +22,7 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 
   You **must** modify `layouts/partials/comments.html` with your own gitalk info.
 
-  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L52) to disable all comments: `comments = false`.
+  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml) to disable all comments: `comments = false`.
 
   You may add `no_comment: true` or `nocom: true` at the front matter of your markdown file to disable comment for a single page.
 
@@ -30,7 +30,7 @@ This is a [hugo](https://github.com/gohugoio/hugo) theme forked from [yihui/hugo
 
   You **must** modify `layouts/partials/cnzz.html` with your own cnzz info.
 
-  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml#L52) to disable it: `cnzz = false`.
+  You may add a global config in [config.toml: Params](https://github.com/idealvin/blog/blob/master/config.toml) to disable it: `cnzz = false`.
 
   The cnzz status line was hidden by default. You may replace the `.cnzz: font-size` with a non-zero value in your [style.css](https://github.com/idealvin/hugo-ivy/blob/master/static/css/style.css) to display it.
 
